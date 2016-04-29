@@ -1,15 +1,19 @@
 {
-    "name": "cucumberjs-tests",
-    "version": "1.0.0",
-    "description": "",
-    "author": "Paulo Luan <pauloluan.inova@gmail.com> (http://pauloluan.github.io/)",
-    "license": "MIT",
-    "main": "index.js",
-    "scripts": {
-        "start": "cucumber.js features/sample.feature -f pretty"
-    },
-    "dependencies": {
-        "cucumber": "^0.10.2",
-        "zombie": "^4.2.1"
-    }
+  "name": "cucumberjs-tests",
+  "version": "1.0.0",
+  "description": "",
+  "author": "Paulo Luan <pauloluan.inova@gmail.com> (http://pauloluan.github.io/)",
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "start": "cucumber.js features/sample.feature -f pretty",
+    "debug": "node --debug-brk ./node_modules/.bin/cucumber.js features/sample.feature -f pretty"
+  },
+  "dependencies": {
+    "cucumber": "^0.10.2",
+    "zombie": "^4.2.1"
+  },
+  "devDependencies": {
+    "mocha": "^2.4.5"
+  }
 }
